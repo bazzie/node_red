@@ -9,7 +9,7 @@
 class node_red::config {
 
   systemd::unit_file { 'nodered.service':
-    source => epp("node_red/nodered.service"),
+    content => epp("node_red/nodered.service"),
   }
 
 
