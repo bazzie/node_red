@@ -9,9 +9,11 @@
 class node_red::install {
 
   include nodejs
-  
 
-  
-
+  package { 'node-red':
+    ensure   =>  present,
+    provider =>  'npm',
+    require  => Class['nodejs'],
+  }
 
 }
