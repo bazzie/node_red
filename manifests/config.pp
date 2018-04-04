@@ -9,7 +9,7 @@
 class node_red::config {
 
   systemd::unit_file { 'nodered.service':
-    source => "puppet:///modules/${module_name}/nodered.service",
+    source => "puppet:///modules/nodered/nodered.service",
   }
 
 
