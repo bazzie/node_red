@@ -7,7 +7,7 @@ Documentation=http://nodered.org/
 Environment="NODE_OPTIONS=--max-old-space-size=128"
 Environment="NODE_RED_OPTIONS=-v"
 ExecStart=/usr/bin/node $NODE_OPTIONS red.js $NODE_RED_OPTIONS
-WorkingDirectory=/home/pi/node-red/
+WorkingDirectory=/usr/lib/node_modules/node-red/
 User=root
 Group=root
 Nice=10

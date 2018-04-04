@@ -7,4 +7,10 @@
 # @example
 #   include node_red::service
 class node_red::service {
+  
+  service {'nodered':
+    ensure => running,
+    enable => true,
+  }
+  
 }
